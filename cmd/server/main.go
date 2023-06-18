@@ -21,9 +21,6 @@ func main() {
 
 // func run will be responsible for setting up db connections, routers etc
 func run() error {
-	// I'm used to working with postgres, but feel free to use any db you like. You just have to change the driver
-	// I'm not going to cover how to create a database here but create a database
-	// and call it something along the lines of "team tracker"
 	connectionString := "postgres://postgres:1234@localhost/k8s_go_opa?sslmode=disable"
 
 	// setup database connection
@@ -48,6 +45,12 @@ func run() error {
 
 	server := app.NewServer(router, userService, teamService)
 
+	err = storage.Migrate(connectionString)
+
+	if err != nil {
+		return err
+	}
+
 	// start the server
 	err = server.Run()
 
@@ -59,7 +62,6 @@ func run() error {
 }
 
 func setupDatabase(connString string) (*sql.DB, error) {
-	// change "postgres" for whatever supported database you want to use
 	db, err := sql.Open("postgres", connString)
 
 	if err != nil {
