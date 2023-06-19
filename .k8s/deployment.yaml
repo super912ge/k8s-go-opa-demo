@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-go-opa-demo
+  labels:
+    app: k8s-go-opa-demo
+spec:
+    replicas: 1
+    selector:
+      matchLabels:
+        app: k8s-go-opa-demo
+    template:
+      metadata:
+        labels:
+          app: k8s-go-opa-demo
+      spec:
+        containers:
+        - name: k8s-go-opa-demo
+          image: k8s-go-opa-demo:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+          - containerPort: 8081
+          resources:
+            limits:
+              cpu: 100m
+              memory: 128Mi
+            requests:
+              cpu: 100m
+              memory: 128Mi
+          
