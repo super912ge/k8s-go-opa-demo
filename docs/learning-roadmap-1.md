@@ -18,6 +18,9 @@ Since you plan to deploy that application to Kubernetes you must build a contain
 * [ ] What is a `struct`?
 * [ ] What is an `interface` in Go?
 * [ ] How to define methods in Go?
+* [ ] How do you manage the scope of methods and attribute in Go?
+* [ ] How can you create a loop in Go?
+* [ ] How can you handle condition in Go?
 
 ### Application lifecycle
 
@@ -26,13 +29,15 @@ Since you plan to deploy that application to Kubernetes you must build a contain
 * [ ] How to write unit test in golang?
 * [ ] How to run unit tests?
 * [ ] How to build an application binary?
+* [ ] What is a package in Go?
+* [ ] What is a module in Go?
+* [ ] How do you install a new module?
 
 ### HTTP API
 
 * [ ] How would you create an http server in Go?
 * [ ] What libray would you use to simplify the HTTPs server creation?
 * [ ] How do you convert JSON request and response to Go struct?
-* [ ] 
 
 ## Docker
 
@@ -52,9 +57,17 @@ Since you plan to deploy that application to Kubernetes you must build a contain
 * [ ] What is the advantage of a multistage build?
 * [ ] How does build stages interact with each others?
 * [ ] What is the result of a multi-stage Docker build?
+* [ ] What is a layer in a Docker Image?
+* [ ] Why is it considere best practices to minimize the number of layers?
+* [ ] How can you minimise the number of layers in your Docker images?
 
-### General Knoledge
+### General Knowledge
 
 * [ ] What are the most popular use of Docker?
 * [ ] How do you run docker on MacOS and Windows?
 * [ ] Where can you find existing Docker images?
+
+### Paying Attention to details
+
+* [ ] What is the difference between `ADD` and `COPY` in a Dockerfile?
+
