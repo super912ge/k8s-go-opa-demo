@@ -36,8 +36,25 @@ Since you plan to deploy that application to Kubernetes you must build a contain
 
 ## Docker
 
+### Basics
+
 * [ ] What is Docker?
 * [ ] What is the difference between a Docker Image and Docker Container?
 * [ ] What is a Dockerfile?
 * [ ] What are the most commun instruction in a Dockerfle?
-* [ ] What is a multi-stage
+* [ ] How do you build a container image with Docker?
+* [ ] How do you run a container?
+* [ ] How can you make you application running in the container reachable from your host machine?
+
+### Advanced
+
+* [ ] What is a multi-stage build?
+* [ ] What is the advantage of a multistage build?
+* [ ] How does build stages interact with each others?
+* [ ] What is the result of a multi-stage Docker build?
+
+### General Knoledge
+
+* [ ] What are the most popular use of Docker?
+* [ ] How do you run docker on MacOS and Windows?
+* [ ] Where can you find existing Docker images?
