@@ -8,6 +8,9 @@ In this initial phase build an application that run an HTTP server and exposes e
 
 Since you plan to deploy that application to Kubernetes you must build a container image to run in your local Kubernetes cluster.
 * Write a Dockerfile to build your application
+* Write a Kuberntes manifest defining a `Deployment` for you application
+
+Deploy your application to you local Kubernetes cluster and create a `port-forward` to test it work as expected
 
 ## Golang
 
@@ -71,3 +74,20 @@ Since you plan to deploy that application to Kubernetes you must build a contain
 
 * [ ] What is the difference between `ADD` and `COPY` in a Dockerfile?
 
+## Kubernetes
+
+### General Knowledges
+
+* [ ] What is Kubernetes?
+* [ ] How is Kubernetes different from Docker?
+* [ ] Does Kubernetes uses Docker?
+* [ ] What is the general architecture of Kubernetes?
+* [ ] How can you create a local Kubernetes cluster?
+* [ ] How do you deploy application to Kubernetes?
+
+### Using Kubernetes
+
+* [ ] What is `kubectl`?
+* [ ] What is a Pod?
+* [ ] What is a Deployement?
+* [ ] How can you run a container in Kubernetes?
